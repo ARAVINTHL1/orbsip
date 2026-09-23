@@ -41,6 +41,7 @@ const navLinks = [
   { label: 'Our Flavors', to: 'flavors' },
   { label: 'Events', to: 'events' },
   { label: 'About Us', to: 'about' },
+  { label: 'Reviews', to: 'reviews' },
 ]
 
 const flavorLinks = [

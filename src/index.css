@@ -149,6 +149,11 @@ body {
   }
 }
 
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ── Utility helpers ── */
 .float-anim      { animation: float 4s ease-in-out infinite; }
 .float-slow-anim { animation: floatSlow 6s ease-in-out infinite; }
@@ -159,6 +164,8 @@ body {
 .stream-flow     { animation: streamFlow 2s linear infinite; background-size: 200% 100%; }
 .droplet-pulse   { animation: droplet 1.4s ease-in-out infinite; }
 .fade-slide-up   { animation: fadeSlideUp 0.45s ease forwards; }
+.marquee-track   { display: flex; width: max-content; animation: marqueeScroll 40s linear infinite; }
+.marquee-track:hover { animation-play-state: paused; }
 
 .animate-in {
   animation: fadeInUp 0.7s ease forwards;

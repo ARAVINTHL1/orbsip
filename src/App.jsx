@@ -6,6 +6,7 @@ import BrandValues from './components/BrandValues'
 import Flavors from './components/Flavors'
 import Events from './components/Events'
 import About from './components/About'
+import Reviews from './components/Reviews'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
 import SplashScreen from './components/SplashScreen'
@@ -26,6 +27,7 @@ export default function App() {
         <Flavors />
         <Events />
         <About />
+        <Reviews />
       </main>
 
       <Footer />

@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'Flavors', to: 'flavors' },
   { label: 'Events', to: 'events' },
   { label: 'About', to: 'about' },
+  { label: 'Reviews', to: 'reviews' },
 ]
 
 export default function Navbar() {
