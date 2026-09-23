@@ -40,14 +40,14 @@ export default function Navbar() {
           ? 'bg-[#0D2818]/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.4)] py-3'
           : 'bg-transparent py-5'}`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+      <div className="w-full px-4 sm:px-8 lg:px-12 flex items-center justify-between">
 
-        {/* Logo */}
-        <Link to="home" {...linkProps} className="cursor-pointer flex-shrink-0">
+        {/* Logo at Left Corner */}
+        <Link to="home" {...linkProps} className="cursor-pointer flex-shrink-0 flex items-center">
           <img
-            src="/images/logo.jpg"
+            src="/images/logo.png"
             alt="OrbSip Logo"
-            className="h-10 w-auto rounded-lg object-contain"
+            className="h-10 sm:h-11 w-auto rounded-xl object-contain bg-white px-3 py-1 shadow-md hover:scale-105 transition-transform"
           />
         </Link>
 
