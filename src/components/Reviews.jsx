@@ -1,84 +1,84 @@
-import { useState, useRef } from 'react'
+import { useRef } from 'react'
 import useScrollReveal from '../hooks/useScrollReveal'
 import { Star, ChevronLeft, ChevronRight, CheckCircle2, MessageSquareQuote } from 'lucide-react'
 
 const reviewsData = [
   {
     id: 'rev-1',
-    name: 'Aarav Sharma',
-    city: 'Bengaluru, Karnataka',
+    name: 'Karthik Rajan',
+    city: 'Chennai, Tamil Nadu',
     rating: 5,
     flavor: 'Alphonso Mango Burst',
-    initials: 'AS',
+    initials: 'KR',
     review:
-      'The bursting orbs in the Alphonso Mango flavor are mind-blowing! You get a fresh fruit explosion with every sip. Completely replaced my usual sugary energy drinks.',
-    date: '2 days ago',
+      'The mango bursting bubbles are so tasty! Best refreshing drink for sunny days.',
+    date: 'Yesterday',
   },
   {
     id: 'rev-2',
-    name: 'Ananya Iyer',
-    city: 'Chennai, Tamil Nadu',
+    name: 'Priya Dharshini',
+    city: 'Coimbatore, Tamil Nadu',
     rating: 5,
     flavor: 'Ruby Guava Pop',
-    initials: 'AI',
+    initials: 'PD',
     review:
-      'Tried OrbSip at our college fest and the whole gang was obsessed. The texture is unlike anything else in India — crisp, playful, and super refreshing in hot weather!',
-    date: '4 days ago',
+      'Loved the guava pop flavor! The bursting orbs are super fun and delicious.',
+    date: '3 days ago',
   },
   {
     id: 'rev-3',
-    name: 'Rohan Verma',
-    city: 'Mumbai, Maharashtra',
+    name: 'Saravanan Muthu',
+    city: 'Madurai, Tamil Nadu',
     rating: 5,
     flavor: 'Crimson Watermelon Fizz',
-    initials: 'RV',
+    initials: 'SM',
     review:
-      'The Watermelon Fizz with popping bubbles is a true party in your mouth. Both kids and adults in our family fight over the last bottle. 10/10 innovation!',
-    date: '1 week ago',
+      'Watermelon flavor is awesome. My whole family loved the popping pearls!',
+    date: '5 days ago',
   },
   {
     id: 'rev-4',
-    name: 'Diya Patel',
-    city: 'Ahmedabad, Gujarat',
+    name: 'Deepika Murugan',
+    city: 'Tiruchirappalli, Tamil Nadu',
     rating: 5,
     flavor: 'Tropical Passion Orb',
-    initials: 'DP',
+    initials: 'DM',
     review:
-      'Zero synthetic aftertaste, pure orchard flavor. The molecular orb science actually works — the bubbles stay intact and burst right when you sip.',
+      'Very fresh and natural fruit taste. Kids really enjoyed the popping feeling.',
     date: '1 week ago',
   },
   {
     id: 'rev-5',
-    name: 'Vikram Malhotra',
-    city: 'New Delhi, Delhi',
+    name: 'Aravind Kumar',
+    city: 'Salem, Tamil Nadu',
     rating: 5,
     flavor: 'Alphonso Mango Burst',
-    initials: 'VM',
+    initials: 'AK',
     review:
-      'Ordered a 12-pack for our startup game night and it was gone in 20 minutes! The packaging aesthetics and the mouthfeel pop are absolutely world-class.',
-    date: '2 weeks ago',
+      'Brought this for our college get-together. Everyone loved the pop in every sip!',
+    date: '1 week ago',
   },
   {
     id: 'rev-6',
-    name: 'Sneha Reddy',
-    city: 'Hyderabad, Telangana',
+    name: 'Kavitha Sundar',
+    city: 'Tirunelveli, Tamil Nadu',
     rating: 5,
     flavor: 'Ruby Guava Pop',
-    initials: 'SR',
+    initials: 'KS',
     review:
-      'I was skeptical about edible liquid orbs at first, but one sip of the Guava changed everything. Perfectly balanced sweetness, natural pulp, and 100% fun!',
+      'Super unique drink! Sweet, tangy, and keeps you chilled all afternoon.',
     date: '2 weeks ago',
   },
   {
     id: 'rev-7',
-    name: 'Karthik Sundaram',
-    city: 'Kochi, Kerala',
+    name: 'Vignesh Balaji',
+    city: 'Thanjavur, Tamil Nadu',
     rating: 5,
     flavor: 'Crimson Watermelon Fizz',
-    initials: 'KS',
+    initials: 'VB',
     review:
-      'OrbSip feels like fine-dining molecular gastronomy made accessible for daily life. Clean ingredients, real fruit, and fantastic fizz. Proud of this brand!',
-    date: '3 weeks ago',
+      'The juice quality is top class. Great fizz, nice bottle, and 100% fun to drink!',
+    date: '2 weeks ago',
   },
 ]
 
@@ -128,7 +128,7 @@ export default function Reviews() {
               </span>
             </h2>
             <p className="mt-3 text-base text-[#1A3A2A]/70 font-[Inter] max-w-xl">
-              Hear what beverage enthusiasts, students, and fruit lovers across Indian cities are saying about the OrbSip sensation.
+              Hear what real juice lovers are saying about the popping sensation of OrbSip.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ export default function Reviews() {
 
       </div>
 
-      {/* ── HORIZONTAL CAROUSEL (UNIFORM DESIGN & SLOWER SCROLL) ── */}
+      {/* ── HORIZONTAL CAROUSEL ── */}
       <div
         ref={scrollRef}
         className="w-full overflow-x-auto no-scrollbar scroll-smooth cursor-grab active:cursor-grabbing py-4"
@@ -163,7 +163,7 @@ export default function Reviews() {
           {loopList.map((item, index) => (
             <div
               key={`${item.id}-${index}`}
-              className="w-[340px] sm:w-[380px] flex-shrink-0 bg-white rounded-3xl p-7 border border-emerald-950/10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_45px_rgba(13,40,24,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative group overflow-hidden"
+              className="w-[330px] sm:w-[360px] flex-shrink-0 bg-white rounded-3xl p-7 border border-emerald-950/10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_45px_rgba(13,40,24,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative group overflow-hidden"
             >
               {/* Uniform brand accent top bar */}
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#D4AF37] via-[#4CAF50] to-[#1E88E5]" />
@@ -192,8 +192,8 @@ export default function Reviews() {
                   </span>
                 </div>
 
-                {/* Review Text */}
-                <p className="text-[#1A3A2A]/85 font-[Inter] text-sm leading-relaxed mb-6 italic">
+                {/* Simple & clear review text */}
+                <p className="text-[#1A3A2A]/90 font-[Inter] text-base leading-relaxed mb-6 italic">
                   "{item.review}"
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default function Reviews() {
                   </span>
                 </div>
 
-                {/* Reviewer Info with Uniform Avatar Styling */}
+                {/* Reviewer Info with Tamil names and cities */}
                 <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
                   <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#0D2818] to-[#1F4D35] text-[#D4AF37] font-[Poppins] font-bold text-sm shadow-md ring-2 ring-[#D4AF37]/30 flex items-center justify-center flex-shrink-0">
                     {item.initials}
