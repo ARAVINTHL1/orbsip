@@ -142,15 +142,6 @@ export default function BrandValues() {
               </span>
             </h2>
           </div>
-          <div className="flex items-center gap-3 bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 self-start md:self-auto">
-            <span className="text-xs text-white/50 font-mono">Stream:</span>
-            <button
-              onClick={() => setAutoPlay(!autoPlay)}
-              className="text-xs font-[Poppins] font-bold text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1.5 cursor-pointer"
-            >
-              {autoPlay ? '⏸ Pause' : '▶ Play'}
-            </button>
-          </div>
         </div>
 
         {/* ── FLOW PIPELINE ── */}
