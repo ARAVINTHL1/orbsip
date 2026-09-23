@@ -118,17 +118,17 @@ export default function Reviews() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold font-[Poppins] uppercase tracking-[0.2em] mb-3">
-              <span className="text-sm">🇮🇳</span>
-              Loved Across India • 50,000+ Sips
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              Customer Reviews
             </div>
             <h2 className="text-3xl sm:text-5xl font-[Poppins] font-black text-[#0D2818] tracking-tight">
-              Real Sips,{' '}
+              What People Say{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#E8C84A] to-[#4CAF50]">
-                Real Bursts.
+                About OrbSip.
               </span>
             </h2>
             <p className="mt-3 text-base text-[#1A3A2A]/70 font-[Inter] max-w-xl">
-              Hear what real juice lovers are saying about the popping sensation of OrbSip.
+              Honest feedback and ratings from juice lovers enjoying our bursting orb flavors.
             </p>
           </div>
 
