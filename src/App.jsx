@@ -15,7 +15,7 @@ export default function App() {
   const [loading, setLoading] = useState(true)
 
   return (
-    <>
+    <div className={loading ? 'home-page is-loading' : 'home-page is-ready'}>
       {loading && <SplashScreen onDone={() => setLoading(false)} />}
 
       <Navbar />
@@ -32,6 +32,6 @@ export default function App() {
 
       <Footer />
       <BackToTop />
-    </>
+    </div>
   )
 }

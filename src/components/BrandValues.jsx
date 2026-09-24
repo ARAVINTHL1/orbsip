@@ -120,24 +120,8 @@ export default function BrandValues() {
           </h2>
         </div>
 
-        {/* ── FLOW PIPELINE (SIMPLE & CLEAN) ── */}
+        {/* ── SPOTLIGHT VALUE CAROUSEL ── */}
         <div className="relative mb-12">
-
-          {/* Desktop Connecting Line */}
-          <div className="hidden lg:block absolute top-[44px] left-[8%] right-[8%] h-1 z-0 pointer-events-none">
-            {/* Background base track */}
-            <div className="w-full h-1 bg-white/10 rounded-full" />
-
-            {/* Simple glowing progress line */}
-            <div
-              className="absolute top-0 left-0 h-1 rounded-full transition-all duration-700 ease-in-out"
-              style={{
-                width: `${(activeStep / (flowSteps.length - 1)) * 100}%`,
-                backgroundColor: current.color,
-                boxShadow: `0 0 10px ${current.color}`,
-              }}
-            />
-          </div>
 
           {/* 5 Process Nodes */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 relative z-10">
@@ -149,18 +133,22 @@ export default function BrandValues() {
                 <div
                   key={item.id}
                   onClick={() => setActiveStep(index)}
-                  className={`group relative flex flex-col items-center text-center p-6 rounded-3xl cursor-pointer border
+                  className={`value-card group relative flex flex-col items-center text-center p-6 rounded-3xl cursor-pointer border
                     transition-all duration-400 ease-out
                     ${isCurrent
-                      ? 'bg-white/10 border-white/30 shadow-lg -translate-y-2'
+                      ? 'value-card-active bg-white/10 border-white/30 shadow-lg -translate-y-2'
                       : isPast
                         ? 'bg-white/[0.04] border-white/15 hover:bg-white/[0.07]'
                         : 'bg-white/[0.02] border-white/5 hover:bg-white/[0.05] opacity-50 hover:opacity-80'
                     }`}
+                  style={{
+                    '--value-delay': `${index * 0.18}s`,
+                    '--value-color': item.color,
+                  }}
                 >
                   {/* Flow Node Icon Hub */}
                   <div
-                    className="relative w-16 h-16 rounded-2xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-105"
+                    className={`value-card-hub relative w-16 h-16 rounded-2xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-105 ${isCurrent ? 'value-card-hub-active' : ''}`}
                     style={{
                       backgroundColor: isCurrent ? `${item.color}25` : isPast ? `${item.color}15` : 'rgba(255,255,255,0.05)',
                       border: `1.5px solid ${isCurrent ? item.color : 'rgba(255,255,255,0.1)'}`,
