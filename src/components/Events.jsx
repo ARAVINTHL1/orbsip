@@ -72,7 +72,7 @@ export default function Events() {
             </h2>
           </Reveal>
           <Reveal delay={120}>
-            <p className="text-white/70 font-[Inter] text-lg leading-relaxed mb-8 max-w-md">
+            <p className="text-white/85 font-[Inter] text-lg leading-relaxed mb-8 max-w-md">
               A unique beverage experience for every occasion — from intimate celebrations
               to large-scale events, OrbSip brings the wow factor.
             </p>
@@ -85,7 +85,7 @@ export default function Events() {
                   key={o.id}
                   id={o.id}
                   className="flex items-center gap-2 px-4 py-2.5 rounded-full glass
-                    text-white/85 text-sm font-medium font-[Poppins]
+                    text-white text-sm font-medium font-[Poppins]
                     hover:bg-white/15 hover:text-white hover:scale-105
                     transition-all duration-300 cursor-default"
                 >
@@ -105,7 +105,7 @@ export default function Events() {
                 'Bulk orders with flexible delivery',
                 'On-site OrbSip experience stations',
               ].map(item => (
-                <li key={item} className="flex items-start gap-3 text-white/70 font-[Inter] text-sm">
+                <li key={item} className="flex items-start gap-3 text-white/85 font-[Inter] text-sm">
                   <span className="w-5 h-5 rounded-full bg-white/20 border border-white/40
                     flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
@@ -145,7 +145,7 @@ export default function Events() {
             >
               {/* Name */}
               <div className="flex flex-col gap-1.5">
-                <label htmlFor="form-name" className="text-white/80 text-sm font-medium font-[Inter]">
+                <label htmlFor="form-name" className="text-white text-sm font-medium font-[Inter]">
                   Your Name
                 </label>
                 <input
@@ -158,7 +158,7 @@ export default function Events() {
                   required
                   autoComplete="name"
                   className="w-full px-4 py-3 rounded-xl bg-white/8 border border-white/15
-                    text-white font-[Inter] text-sm placeholder:text-white/30
+                    text-white font-[Inter] text-sm placeholder:text-white/55
                     focus:outline-none focus:border-white/60 focus:bg-white/12
                     transition-colors duration-200"
                 />
@@ -166,7 +166,7 @@ export default function Events() {
 
               {/* Email */}
               <div className="flex flex-col gap-1.5">
-                <label htmlFor="form-email" className="text-white/80 text-sm font-medium font-[Inter]">
+                <label htmlFor="form-email" className="text-white text-sm font-medium font-[Inter]">
                   Email Address
                 </label>
                 <input
@@ -179,7 +179,7 @@ export default function Events() {
                   required
                   autoComplete="email"
                   className="w-full px-4 py-3 rounded-xl bg-white/8 border border-white/15
-                    text-white font-[Inter] text-sm placeholder:text-white/30
+                    text-white font-[Inter] text-sm placeholder:text-white/55
                     focus:outline-none focus:border-white/60 focus:bg-white/12
                     transition-colors duration-200"
                 />
@@ -187,7 +187,7 @@ export default function Events() {
 
               {/* Event type */}
               <div className="flex flex-col gap-1.5">
-                <label htmlFor="form-event" className="text-white/80 text-sm font-medium font-[Inter]">
+                <label htmlFor="form-event" className="text-white text-sm font-medium font-[Inter]">
                   Event Type
                 </label>
                 <select
@@ -215,7 +215,7 @@ export default function Events() {
 
               {/* Message */}
               <div className="flex flex-col gap-1.5">
-                <label htmlFor="form-message" className="text-white/80 text-sm font-medium font-[Inter]">
+                <label htmlFor="form-message" className="text-white text-sm font-medium font-[Inter]">
                   Tell us more…
                 </label>
                 <textarea
@@ -227,7 +227,7 @@ export default function Events() {
                   placeholder="Event date, number of guests, any special requirements…"
                   required
                   className="w-full px-4 py-3 rounded-xl bg-white/8 border border-white/15
-                    text-white font-[Inter] text-sm placeholder:text-white/30 resize-none
+                    text-white font-[Inter] text-sm placeholder:text-white/55 resize-none
                     focus:outline-none focus:border-white/60 focus:bg-white/12
                     transition-colors duration-200"
                 />
