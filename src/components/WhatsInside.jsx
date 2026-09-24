@@ -50,20 +50,6 @@ const steps = [
       </svg>
     ),
   },
-  {
-    id: 'step-surprise',
-    number: '03',
-    title: 'A Little Surprise',
-    desc: 'Every bottle holds a unique orb experience — no two sips are the same. Discover unexpected pops of flavour that make every drink an adventure.',
-    accent: '#D4AF37',
-    icon: (
-      <svg viewBox="0 0 60 60" fill="none" className="w-12 h-12" aria-hidden="true">
-        <circle cx="30" cy="30" r="28" fill="rgba(212,175,55,0.15)" stroke="#D4AF37" strokeWidth="2"/>
-        <polygon points="30,12 34,24 47,24 37,32 41,45 30,37 19,45 23,32 13,24 26,24" fill="#D4AF37" opacity="0.9"/>
-        <polygon points="30,16 33,24 42,24 35,29 37,38 30,33 23,38 25,29 18,24 27,24" fill="#FFF9C4" opacity="0.6"/>
-      </svg>
-    ),
-  },
 ]
 
 /* ── Flavor preview cards ── */
@@ -148,19 +134,20 @@ export default function WhatsInside() {
         </Reveal>
         <Reveal delay={140}>
           <p className="text-center text-[#1A3A2A]/70 font-[Inter] text-lg max-w-xl mx-auto mb-16">
-            Three simple things that add up to something extraordinary.
+            Two simple things that add up to something extraordinary.
           </p>
         </Reveal>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 max-w-5xl mx-auto mb-24">
           {steps.map((step, i) => (
             <Reveal key={step.id} delay={100 + i * 100}>
               <div
                 id={step.id}
-                className="relative flex flex-col items-center text-center p-8
-                  rounded-3xl border border-gray-100 bg-white
-                  hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+                className="relative flex h-full flex-col items-center text-center p-8
+                  rounded-3xl border border-[#2D6A4F]/20 bg-white
+                  shadow-[0_18px_46px_rgba(13,40,24,0.18),0_5px_14px_rgba(45,106,79,0.12)]
+                    hover:border-[#2D6A4F]/40 hover:shadow-[0_28px_82px_rgba(13,40,24,0.26),0_8px_24px_rgba(45,106,79,0.16)]
                   hover:-translate-y-1.5 transition-all duration-400 group"
               >
                 {/* Icon */}
@@ -215,7 +202,8 @@ export default function WhatsInside() {
               <div
                 id={f.id}
                 className="rounded-3xl overflow-hidden border border-gray-100
-                  hover:shadow-[0_24px_60px_rgba(0,0,0,0.1)]
+                  shadow-[0_16px_42px_rgba(13,40,24,0.12)]
+                  hover:shadow-[0_30px_76px_rgba(13,40,24,0.2)]
                   hover:-translate-y-2 transition-all duration-400 group bg-white"
               >
                 {/* Image zone */}

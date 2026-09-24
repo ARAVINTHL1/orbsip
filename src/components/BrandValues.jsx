@@ -97,7 +97,7 @@ export default function BrandValues() {
     <section
       ref={containerRef}
       aria-label="Brand Values Flow Graph"
-      className="invisible-until-scroll py-24 bg-[#071410] relative overflow-hidden text-white"
+      className="invisible-until-scroll py-24 bg-[#1F4D35] relative overflow-hidden text-white"
     >
       {/* Subtle, calm ambient background glow */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -136,7 +136,7 @@ export default function BrandValues() {
                   className={`value-card group relative flex flex-col items-center text-center p-6 rounded-3xl cursor-pointer border
                     transition-all duration-400 ease-out
                     ${isCurrent
-                      ? 'value-card-active bg-white/10 border-white/30 shadow-lg -translate-y-2'
+                      ? 'value-card-active bg-white/10 border-white/30 shadow-[0_20px_55px_rgba(0,0,0,0.3)] -translate-y-2'
                       : isPast
                         ? 'bg-white/[0.04] border-white/15 hover:bg-white/[0.07]'
                         : 'bg-white/[0.02] border-white/5 hover:bg-white/[0.05] opacity-50 hover:opacity-80'
@@ -207,7 +207,7 @@ export default function BrandValues() {
 
         {/* ── ACTIVE STAGE DETAIL CARD (SIMPLE & CLEAN) ── */}
         <div
-          className="relative rounded-3xl p-7 sm:p-9 border border-white/10 bg-white/[0.04] backdrop-blur-md transition-all duration-400"
+          className="relative rounded-3xl p-7 sm:p-9 border border-white/10 bg-white/[0.04] backdrop-blur-md shadow-[0_22px_60px_rgba(0,0,0,0.24)] transition-all duration-400"
           style={{
             borderColor: `${current.color}35`,
           }}

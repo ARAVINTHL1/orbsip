@@ -40,7 +40,7 @@ export default function Events() {
       id="events"
       aria-label="Events and Customization"
       className="py-24 relative overflow-hidden
-        bg-gradient-to-br from-[#071410] via-[#0D2818] to-[#162B1E]"
+        bg-gradient-to-br from-[#1F4D35] via-[#2D6A4F] to-[#1A3A2A]"
     >
       {/* Ambient blobs */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -49,24 +49,24 @@ export default function Events() {
         <div className="absolute -bottom-16 -right-16 w-80 h-80 rounded-full
           bg-[#1E88E5]/8 blur-[80px]" />
         <div className="absolute top-1/2 right-1/4 w-60 h-60 rounded-full
-          bg-[#D4AF37]/6 blur-[70px]" />
+          bg-white/10 blur-[70px]" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6
         grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
 
         {/* ── Left: copy ── */}
         <div className="flex flex-col">
           <Reveal>
             <p className="text-xs font-bold font-[Poppins] uppercase tracking-[0.25em]
-              text-[#D4AF37] mb-4">Experiences</p>
+              text-white mb-4">Experiences</p>
           </Reveal>
           <Reveal delay={60}>
             <h2 className="text-4xl sm:text-5xl font-[Poppins] font-black text-white
               leading-[1.1] mb-5">
               Every Occasion<br />
               <span className="text-transparent bg-clip-text
-                bg-gradient-to-r from-[#D4AF37] via-[#E8C84A] to-[#D4AF37]">
+                bg-gradient-to-r from-white via-white to-white">
                 Deserves an Orb.
               </span>
             </h2>
@@ -106,10 +106,10 @@ export default function Events() {
                 'On-site OrbSip experience stations',
               ].map(item => (
                 <li key={item} className="flex items-start gap-3 text-white/70 font-[Inter] text-sm">
-                  <span className="w-5 h-5 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40
+                  <span className="w-5 h-5 rounded-full bg-white/20 border border-white/40
                     flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                      <path d="M2 5l2 2 4-4" stroke="#D4AF37" strokeWidth="1.5"
+                      <path d="M2 5l2 2 4-4" stroke="white" strokeWidth="1.5"
                         strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </span>
@@ -126,9 +126,9 @@ export default function Events() {
             id="contact"
             className="rounded-3xl overflow-hidden
               bg-white/5 backdrop-blur-md border border-white/10
-              shadow-[0_24px_60px_rgba(0,0,0,0.4)]"
+              shadow-[0_30px_78px_rgba(0,0,0,0.48),0_8px_24px_rgba(116,198,157,0.12)]"
           >
-            <div className="bg-gradient-to-r from-[#D4AF37] to-[#E8C84A] px-8 py-6">
+            <div className="bg-[#B7E4C7] px-8 py-6">
               <h3 className="text-xl font-[Poppins] font-black text-[#0D2818]">
                 Plan Your OrbSip Experience
               </h3>
@@ -159,7 +159,7 @@ export default function Events() {
                   autoComplete="name"
                   className="w-full px-4 py-3 rounded-xl bg-white/8 border border-white/15
                     text-white font-[Inter] text-sm placeholder:text-white/30
-                    focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/12
+                    focus:outline-none focus:border-white/60 focus:bg-white/12
                     transition-colors duration-200"
                 />
               </div>
@@ -180,7 +180,7 @@ export default function Events() {
                   autoComplete="email"
                   className="w-full px-4 py-3 rounded-xl bg-white/8 border border-white/15
                     text-white font-[Inter] text-sm placeholder:text-white/30
-                    focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/12
+                    focus:outline-none focus:border-white/60 focus:bg-white/12
                     transition-colors duration-200"
                 />
               </div>
@@ -198,7 +198,7 @@ export default function Events() {
                   required
                   className="w-full px-4 py-3 rounded-xl bg-white/8 border border-white/15
                     text-white font-[Inter] text-sm
-                    focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/12
+                    focus:outline-none focus:border-white/60 focus:bg-white/12
                     transition-colors duration-200 appearance-none cursor-pointer
                     [&>option]:bg-[#0D2818] [&>option]:text-white"
                 >
@@ -228,7 +228,7 @@ export default function Events() {
                   required
                   className="w-full px-4 py-3 rounded-xl bg-white/8 border border-white/15
                     text-white font-[Inter] text-sm placeholder:text-white/30 resize-none
-                    focus:outline-none focus:border-[#D4AF37]/60 focus:bg-white/12
+                    focus:outline-none focus:border-white/60 focus:bg-white/12
                     transition-colors duration-200"
                 />
               </div>
@@ -250,10 +250,10 @@ export default function Events() {
                   type="submit"
                   id="form-submit-btn"
                   className="inline-flex items-center justify-center gap-2 w-full px-6 py-4
-                    rounded-xl bg-[#D4AF37] text-[#0D2818] font-black font-[Poppins] text-sm
-                    hover:bg-[#E8C84A] transition-all duration-300
-                    shadow-[0_0_24px_rgba(212,175,55,0.4)]
-                    hover:shadow-[0_0_36px_rgba(212,175,55,0.6)]
+                    rounded-xl bg-[#B7E4C7] text-[#0D2818] font-black font-[Poppins] text-sm
+                    hover:bg-[#D8F3DC] transition-all duration-300
+                    shadow-[0_0_24px_rgba(183,228,199,0.28)]
+                    hover:shadow-[0_0_36px_rgba(183,228,199,0.5)]
                     hover:-translate-y-0.5 btn-gold-shimmer"
                 >
                   Send My Inquiry <Send size={16} />
@@ -263,6 +263,9 @@ export default function Events() {
           </div>
         </Reveal>
       </div>
+
+      <div aria-hidden="true" className="absolute bottom-0 left-0 right-0 z-0 h-24
+        bg-gradient-to-b from-transparent via-[#1F4D35]/70 to-white pointer-events-none" />
     </section>
   )
 }

@@ -37,7 +37,7 @@ export default function Navbar() {
       aria-label="Main Navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400
         ${scrolled
-          ? 'bg-[#0D2818]/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.4)] py-3'
+          ? 'bg-[#2D6A4F]/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.4)] py-3'
           : 'bg-transparent py-5'}`}
     >
       <div className="w-full px-4 sm:px-8 lg:px-12 flex items-center justify-between">
@@ -107,7 +107,7 @@ export default function Navbar() {
           ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <ul
-          className="flex flex-col px-6 pb-6 pt-2 gap-1 bg-[#0D2818]/98 backdrop-blur-md list-none"
+          className="flex flex-col px-6 pb-6 pt-2 gap-1 bg-[#2D6A4F]/98 backdrop-blur-md list-none"
           role="list"
         >
           {navLinks.map(({ label, to }) => (

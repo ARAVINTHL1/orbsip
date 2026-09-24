@@ -63,7 +63,7 @@ export default function Footer() {
   return (
     <footer
       role="contentinfo"
-      className="bg-[#071410] border-t border-white/5"
+      className="bg-[#1F4D35] border-t border-white/5"
     >
       {/* Top grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-12
@@ -82,7 +82,7 @@ export default function Footer() {
             <p className="text-[#D4AF37] font-[Poppins] font-bold text-sm">
               Fresh, Fun, Just Orbs.
             </p>
-            <p className="text-white/45 font-[Inter] text-xs mt-1">
+            <p className="text-white font-[Inter] text-xs mt-1">
               You've had juice. Now try it with a twist.
             </p>
           </div>
@@ -97,7 +97,7 @@ export default function Footer() {
                 role="listitem"
                 aria-label={`Follow us on ${label}`}
                 className="w-9 h-9 rounded-full bg-white/8 border border-white/10 flex items-center
-                  justify-center text-white/55 hover:text-[#D4AF37] hover:bg-white/15
+                  justify-center text-white hover:text-white hover:bg-white/15
                   hover:border-[#D4AF37]/30 transition-all duration-300"
               >
                 <Icon size={16} aria-hidden="true" />
@@ -118,7 +118,7 @@ export default function Footer() {
                   <Link
                     to={to}
                     {...linkProps}
-                    className="text-white/50 hover:text-[#D4AF37] text-sm font-[Inter]
+                    className="text-white hover:text-white text-sm font-[Inter]
                       cursor-pointer transition-colors duration-200 inline-flex items-center gap-2 group"
                   >
                     <span className="w-0 group-hover:w-3 h-px bg-[#D4AF37] transition-all duration-300" />
@@ -141,7 +141,7 @@ export default function Footer() {
                 <Link
                   to={to}
                   {...linkProps}
-                  className="text-white/50 hover:text-[#D4AF37] text-sm font-[Inter]
+                    className="text-white hover:text-white text-sm font-[Inter]
                     cursor-pointer transition-colors duration-200 inline-flex items-center gap-2 group"
                 >
                   <span className="w-0 group-hover:w-3 h-px bg-[#D4AF37] transition-all duration-300" />
@@ -161,7 +161,7 @@ export default function Footer() {
             <a
               id="footer-email"
               href="mailto:hello@orbsip.com"
-              className="flex items-center gap-3 text-white/50 hover:text-[#D4AF37]
+              className="flex items-center gap-3 text-white hover:text-white
                 text-sm font-[Inter] transition-colors duration-200 group"
             >
               <span className="w-8 h-8 rounded-full bg-white/8 flex items-center justify-center
@@ -173,7 +173,7 @@ export default function Footer() {
             <a
               id="footer-phone"
               href="tel:+919876543210"
-              className="flex items-center gap-3 text-white/50 hover:text-[#D4AF37]
+              className="flex items-center gap-3 text-white hover:text-white
                 text-sm font-[Inter] transition-colors duration-200 group"
             >
               <span className="w-8 h-8 rounded-full bg-white/8 flex items-center justify-center
@@ -194,7 +194,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6
         flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-white/30 font-[Inter] text-xs text-center sm:text-left">
+        <p className="text-white font-[Inter] text-xs text-center sm:text-left">
           © 2026 OrbSip Beverages Pvt. Ltd. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
@@ -202,7 +202,7 @@ export default function Footer() {
             <a
               key={link}
               href="#"
-              className="text-white/30 hover:text-[#D4AF37] font-[Inter] text-xs
+              className="text-white hover:text-white font-[Inter] text-xs
                 transition-colors duration-200"
             >
               {link}

@@ -23,7 +23,7 @@ export default function Hero() {
       id="home"
       aria-label="Hero Section"
       className="relative min-h-screen flex items-center overflow-hidden
-        bg-gradient-to-br from-[#071410] via-[#0D2818] to-[#162B1E]"
+        bg-gradient-to-br from-[#1F4D35] via-[#2D6A4F] to-[#1A3A2A]"
     >
       {/* Ambient gradient blobs */}
       <div aria-hidden="true" className="absolute inset-0 overflow-hidden pointer-events-none">

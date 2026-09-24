@@ -106,10 +106,9 @@ export default function Flavors() {
                 id={p.id}
                 className={`relative flex flex-col rounded-3xl overflow-hidden h-full
                   border transition-all duration-400 group
-                  hover:shadow-[0_28px_70px_rgba(0,0,0,0.12)] hover:-translate-y-2
-                  ${p.featured
-                    ? 'border-[#D4AF37]/50 shadow-[0_12px_40px_rgba(212,175,55,0.18)] bg-[#0D2818]'
-                    : 'border-gray-100 bg-white'}`}
+                    shadow-[0_22px_58px_rgba(13,40,24,0.2)]
+                    hover:shadow-[0_40px_96px_rgba(13,40,24,0.3)] hover:-translate-y-2
+                  border-gray-100 bg-white`}
               >
                 {/* Featured badge */}
                 {p.featured && p.tag && (
@@ -168,15 +167,13 @@ export default function Flavors() {
                 </div>
 
                 {/* Card body */}
-                <div className={`flex flex-col flex-1 p-7
-                  ${p.featured ? 'text-white' : 'text-[#0D2818]'}`}>
+                <div className="flex flex-col flex-1 p-7 text-[#0D2818]">
                   <div className="flex items-center gap-2 mb-3">
                     <span
                       className="w-3 h-3 rounded-full flex-shrink-0"
                       style={{ background: p.dotColor }}
                     />
-                    <span className={`text-xs font-[Inter] font-medium uppercase tracking-wider
-                      ${p.featured ? 'text-[#D4AF37]' : 'text-[#1A3A2A]/50'}`}>
+                    <span className="text-xs font-[Inter] font-medium uppercase tracking-wider text-[#1A3A2A]/50">
                       {p.sublabel}
                     </span>
                   </div>
@@ -187,18 +184,14 @@ export default function Flavors() {
                     {p.ingredients.map((ing) => (
                       <li
                         key={ing}
-                        className={`text-xs font-[Inter] px-3 py-1 rounded-full
-                          ${p.featured
-                            ? 'bg-white/10 text-white/80'
-                            : 'bg-[#F0F7F2] text-[#1A3A2A]/80'}`}
+                        className="text-xs font-[Inter] px-3 py-1 rounded-full bg-[#F0F7F2] text-[#1A3A2A]/80"
                       >
                         {ing}
                       </li>
                     ))}
                   </ul>
 
-                  <p className={`text-sm font-[Inter] leading-relaxed mb-6 flex-1
-                    ${p.featured ? 'text-white/75' : 'text-[#1A3A2A]/65'}`}>
+                  <p className="text-sm font-[Inter] leading-relaxed mb-6 flex-1 text-[#1A3A2A]/65">
                     {p.desc}
                   </p>
 
@@ -210,9 +203,7 @@ export default function Flavors() {
                     className={`inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full
                       text-sm font-bold font-[Poppins] cursor-pointer transition-all duration-300
                       hover:-translate-y-0.5 btn-gold-shimmer
-                      ${p.featured
-                        ? 'bg-[#D4AF37] text-[#0D2818] hover:bg-[#E8C84A] shadow-[0_0_24px_rgba(212,175,55,0.4)] hover:shadow-[0_0_36px_rgba(212,175,55,0.6)]'
-                        : 'bg-[#0D2818] text-white hover:bg-[#1A3A2A]'}`}
+                      bg-[#0D2818] text-white hover:bg-[#1A3A2A]`}
                   >
                     Try It Now →
                   </Link>

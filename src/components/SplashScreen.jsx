@@ -30,7 +30,7 @@ export default function SplashScreen({ onDone }) {
       aria-label="OrbSip loading"
       className="fixed inset-0 z-[9999] flex flex-col items-center justify-center overflow-hidden select-none"
       style={{
-        background: '#071410',
+        background: '#1F4D35',
         transition: phase === 'out' ? 'opacity 0.6s ease, transform 0.6s ease' : undefined,
         opacity: phase === 'out' ? 0 : 1,
         transform: phase === 'out' ? 'scale(1.03)' : 'scale(1)',

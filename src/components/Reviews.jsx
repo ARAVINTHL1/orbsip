@@ -104,7 +104,7 @@ export default function Reviews() {
       id="reviews"
       ref={containerRef}
       aria-label="Customer Reviews"
-      className="invisible-until-scroll py-24 bg-gradient-to-b from-white via-gray-50 to-[#071410] relative overflow-hidden"
+      className="invisible-until-scroll py-24 bg-gradient-to-b from-white via-gray-50 to-[#1F4D35] relative overflow-hidden"
     >
       {/* Ambient background decoration */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -163,7 +163,7 @@ export default function Reviews() {
           {loopList.map((item, index) => (
             <div
               key={`${item.id}-${index}`}
-              className="w-[330px] sm:w-[360px] flex-shrink-0 bg-white rounded-3xl p-7 border border-emerald-950/10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_45px_rgba(13,40,24,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative group overflow-hidden"
+              className="w-[330px] sm:w-[360px] flex-shrink-0 bg-white rounded-3xl p-7 border border-emerald-950/10 shadow-[0_16px_42px_rgba(13,40,24,0.12)] hover:shadow-[0_26px_68px_rgba(13,40,24,0.2)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative group overflow-hidden"
             >
               {/* Decorative Quote watermark */}
               <MessageSquareQuote
