@@ -153,17 +153,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll cue */}
-      <div aria-hidden="true"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5">
-        <span className="text-white/40 text-xs font-[Inter] tracking-widest uppercase">Scroll</span>
-        <div className="flex flex-col gap-1">
-          <span className="w-0.5 h-3 bg-white/30 rounded-full mx-auto"
-            style={{ animation: 'scrollCue 1.5s ease-in-out infinite' }} />
-          <span className="w-0.5 h-3 bg-white/20 rounded-full mx-auto"
-            style={{ animation: 'scrollCue 1.5s ease-in-out infinite 0.2s' }} />
-        </div>
-      </div>
+
     </section>
   )
 }
