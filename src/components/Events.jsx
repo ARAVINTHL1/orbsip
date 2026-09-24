@@ -264,8 +264,8 @@ export default function Events() {
         </Reveal>
       </div>
 
-      <div aria-hidden="true" className="absolute bottom-0 left-0 right-0 z-0 h-24
-        bg-gradient-to-b from-transparent via-[#1F4D35]/70 to-white pointer-events-none" />
+      <div aria-hidden="true" className="absolute bottom-0 left-0 right-0 z-10 h-px
+        bg-gradient-to-r from-transparent via-[#B7E4C7]/70 to-transparent pointer-events-none" />
     </section>
   )
 }
