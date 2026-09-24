@@ -334,7 +334,7 @@ body {
   }
 
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-33.3333%);
   }
 }
 
@@ -467,10 +467,6 @@ body {
   display: flex;
   width: max-content;
   animation: marqueeScroll 85s linear infinite;
-}
-
-.marquee-track:hover {
-  animation-play-state: paused;
 }
 
 .animate-in {

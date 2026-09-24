@@ -11,7 +11,7 @@ const reviewsData = [
     flavor: 'Alphonso Mango Burst',
     initials: 'KR',
     review:
-      'The mango bursting bubbles are so tasty! Best refreshing drink for sunny days.',
+      'Mango bursting bubbles semma tasty! Sunny days-ku idhu dhaan best refreshing drink.',
     date: 'Yesterday',
   },
   {
@@ -22,7 +22,7 @@ const reviewsData = [
     flavor: 'Ruby Guava Pop',
     initials: 'PD',
     review:
-      'Loved the guava pop flavor! The bursting orbs are super fun and delicious.',
+      'Guava pop flavor romba pidichirukku! Bursting orbs super fun-um delicious-um irukku.',
     date: '3 days ago',
   },
   {
@@ -33,7 +33,7 @@ const reviewsData = [
     flavor: 'Crimson Watermelon Fizz',
     initials: 'SM',
     review:
-      'Watermelon flavor is awesome. My whole family loved the popping pearls!',
+      'Watermelon flavor vera level! Enga family full-ah indha popping pearls-a enjoy pannanga.',
     date: '5 days ago',
   },
   {
@@ -44,7 +44,7 @@ const reviewsData = [
     flavor: 'Tropical Passion Orb',
     initials: 'DM',
     review:
-      'Very fresh and natural fruit taste. Kids really enjoyed the popping feeling.',
+      'Romba fresh-ah natural fruit taste irukku. Kids popping feel-a semma enjoy pannanga.',
     date: '1 week ago',
   },
   {
@@ -86,8 +86,8 @@ export default function Reviews() {
   const containerRef = useScrollReveal(0.1)
   const scrollRef = useRef(null)
 
-  // Duplicate list once to create continuous seamless looping track
-  const loopList = [...reviewsData, ...reviewsData]
+  // Three identical sets keep the marquee filled while one set loops out.
+  const loopList = [...reviewsData, ...reviewsData, ...reviewsData]
 
   const handleScroll = (direction) => {
     if (scrollRef.current) {
@@ -165,9 +165,6 @@ export default function Reviews() {
               key={`${item.id}-${index}`}
               className="w-[330px] sm:w-[360px] flex-shrink-0 bg-white rounded-3xl p-7 border border-emerald-950/10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_45px_rgba(13,40,24,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative group overflow-hidden"
             >
-              {/* Uniform brand accent top bar */}
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#D4AF37] via-[#4CAF50] to-[#1E88E5]" />
-
               {/* Decorative Quote watermark */}
               <MessageSquareQuote
                 aria-hidden="true"
